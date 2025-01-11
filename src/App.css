@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: rgb(18 18 18);
+  font-family: "DM Sans", serif;
+  color: white;
+  font-weight: 500;
+}

@@ -1,14 +1,20 @@
-import React from "react";
 import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./component/Home";
+import About from "./component/About";
+import Project from "./component/Project";
 
-function App() {
+const App = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-red-100">
-      <h1 className="text-4xl font-bold text-blue-500">
-        Welcome to Tailwind CSS!
-      </h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/project" element={<Project />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
