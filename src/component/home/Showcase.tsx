@@ -10,12 +10,12 @@ const Showcase = () => {
         className="w-full h-[1000px] object-cover relative top-[-120px]"
       />
 
-      <div className="flex flex-col items-center justify-center text-center absolute top-0 bg-[rgba(0,0,0,0.9)] w-full lg:h-auto h-full">
+      <div className="flex flex-col items-center justify-center text-center absolute top-0 bg-primary bg-opacity-90 w-full lg:h-auto h-full">
         <h6 className="uppercase text-white opacity-50 font-medium text-sm mb-6">
           User Advocate…keeping it simple!
         </h6>
 
-        <h1 className="text-secondary font-big_shoulders_display font-extrabold text-[100px] lg:text-[200px] leading-[100px] lg:leading-[200px]">
+        <h1 className="text-secondary font-big_shoulders_display font-extrabold text-[100px] lg:text-[200px] leading-[100px] lg:leading-[220px]">
           LEYE <br /> OLADIPO
         </h1>
 

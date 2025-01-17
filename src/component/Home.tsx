@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "./Navbar";
 import Showcase from "./home/Showcase";
 import About from "./home/About";
 import Project from "./home/Project";
@@ -10,10 +9,6 @@ import CarouselInfo from "./Carousel";
 const Home = () => {
   return (
     <div>
-      <div className="relative z-10 bg-[rgba(0,0,0,0.9)]">
-        <Navbar />
-      </div>
-
       <Showcase />
 
       <div className="lg:px-36 px-6">
@@ -41,8 +36,6 @@ const Home = () => {
           </span>
         </div>
       </div>
-
-      <CarouselInfo carouselData={["lkd", "wa", "tw"]} />
     </div>
   );
 };

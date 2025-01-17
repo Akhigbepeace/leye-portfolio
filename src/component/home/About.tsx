@@ -56,7 +56,7 @@ const About = () => {
             {stacks.map((stack, index) => (
               <div
                 key={index}
-                className="flex items-center justify-between bg-secondary p-6 text-primary rounded-lg divide-x divide-[#121212]"
+                className="flex items-center justify-between bg-secondary p-6 text-primary rounded-lg divide-x divide-primary"
               >
                 <div className="lg:w-[176px]">
                   <h4 className="font-bold text-[24px] mb-2">{stack.title}</h4>
