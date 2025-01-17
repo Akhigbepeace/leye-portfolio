@@ -66,15 +66,15 @@ const Navbar = () => {
               const isCurrentPage = location.pathname === link.path;
 
               return (
-                <Link
+                <span
                   key={index}
-                  to={link.path}
+                  onClick={() => setShowNavlinks(false)}
                   className={`
                     ${isCurrentPage && "text-secondary"}
                     py-3 px-6 font-big_shoulders_display font-medium text-[22px] hover:bg-opacity-30`}
                 >
-                  {link.title}
-                </Link>
+                  <Link to={link.path}>{link.title}</Link>
+                </span>
               );
             })}
           </div>
@@ -82,9 +82,9 @@ const Navbar = () => {
       </div>
 
       <div className="flex items-center gap-6 ">
-        <a href="#" className="text-white py-2 px-5">
+        <Link to="#" className="text-white py-2 px-5">
           Resume
-        </a>
+        </Link>
 
         <button className="bg-white text-primary font-medium text-base py-2 px-5 rounded-[40px]">
           Contact

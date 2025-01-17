@@ -6,6 +6,7 @@ import About from "./component/About";
 import Project from "./component/Project";
 import Navbar from "./component/Navbar";
 import CarouselInfo from "./component/Carousel";
+import ProjectDetails from "./component/ProjectDetails";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/project" element={<Project />} />
+        <Route path="/project/:slug" element={<ProjectDetails />} />
       </Routes>
 
       <CarouselInfo carouselData={["lkd", "wa", "tw"]} />
